@@ -17,7 +17,7 @@ CSS3 (Flexbox, BEM naming)
 JavaScript (ES6, DOM manipulation)
 
 ## Demo
-
+https://kam-bar.github.io/checklist_app/
 
 
 ![homepage](https://i.postimg.cc/d0zW82sH/readme.png)
