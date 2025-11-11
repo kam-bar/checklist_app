@@ -53,8 +53,10 @@ html {
     border: 1px solid #ccc;
     font-family: inherit;
     font-size: 16px;
-    width: 100%;
-    margin-bottom: 10px;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 20px;
+
 }
 
 .form__input:focus {
@@ -71,7 +73,6 @@ html {
     cursor: pointer;
     font-family: inherit;
     transition: background-color 0.3s;
-    width: 100%;
 }
 
 .form__button:hover {
@@ -89,6 +90,10 @@ html {
 }
 
 .tasks__item {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    gap: 10px;
+    align-items: center;
     padding: 10px;
     border-bottom: 1px solid #e8e8e8;
 }
@@ -114,7 +119,6 @@ html {
     color: white;
     font-weight: bold;
     font-size: 16px;
-    margin-right: 10px;
 }
 
 .tasks__button--done {
@@ -139,4 +143,35 @@ html {
 
 .tasks__button--remove:active {
     background-color: #bd2130;
+}
+
+@media (max-width: 768px) {
+    .body {
+        padding: 10px;
+    }
+
+    .header__title {
+        font-size: 24px;
+    }
+
+    .section__header {
+        padding: 15px;
+    }
+
+    .section__title {
+        font-size: 18px;
+    }
+
+    .section__body {
+        padding: 15px;
+    }
+
+    .form {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .form__button {
+        width: 100%;
+    }
 }
