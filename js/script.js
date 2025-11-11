@@ -4,6 +4,7 @@
     const addNewTask = (newTaskContent) => {
         tasks.push({
             content: newTaskContent,
+            done: false,
         });
         render();
     };
