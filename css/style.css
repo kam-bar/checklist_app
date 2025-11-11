@@ -1,0 +1,142 @@
+html {
+    box-sizing: border-box;
+}
+
+*, ::after, ::before {
+    box-sizing: inherit;
+}
+
+.body {
+    font-family: "Montserrat", sans-serif;
+    background-color: #e8e8e8;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.header {
+    margin-bottom: 20px;
+}
+
+.header__title {
+    font-size: 32px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.section {
+    background-color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.section__header {
+    border-bottom: 2px solid #e8e8e8;
+    padding: 20px;
+}
+
+.section__title {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.section__body {
+    padding: 20px;
+}
+
+.form__input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    font-family: inherit;
+    font-size: 16px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.form__input:focus {
+    outline: 2px solid #17a2b8;
+    border-color: #17a2b8;
+}
+
+.form__button {
+    padding: 10px 20px;
+    background-color: #17a2b8;
+    color: white;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    font-family: inherit;
+    transition: background-color 0.3s;
+    width: 100%;
+}
+
+.form__button:hover {
+    background-color: #138496;
+}
+
+.form__button:active {
+    background-color: #117a8b;
+}
+
+.tasks {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.tasks__item {
+    padding: 10px;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+.tasks__item:last-child {
+    border-bottom: none;
+}
+
+.tasks__content {
+    word-break: break-word;
+}
+
+.tasks__content--done {
+    text-decoration: line-through;
+}
+
+.tasks__button {
+    width: 30px;
+    height: 30px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+.tasks__button--done {
+    background-color: #28a745;
+}
+
+.tasks__button--done:hover {
+    background-color: #218838;
+}
+
+.tasks__button--done:active {
+    background-color: #1e7e34;
+}
+
+.tasks__button--remove {
+    background-color: #dc3545;
+}
+
+.tasks__button--remove:hover {
+    background-color: #c82333;
+}
+
+.tasks__button--remove:active {
+    background-color: #bd2130;
+}
