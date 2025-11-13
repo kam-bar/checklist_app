@@ -1,0 +1,16 @@
+.header {
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.header__title {
+    font-size: 32px;
+    font-weight: bold;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .header__title {
+        font-size: 24px;
+    }
+}

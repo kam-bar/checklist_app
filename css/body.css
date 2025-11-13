@@ -8,11 +8,11 @@ html {
     box-sizing: inherit;
 }
 
-body {
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #eee;
+.body {
+    font-family: "Montserrat", sans-serif;
+    background-color: #e8e8e8;
     margin: 0;
-    padding: 0;
+    padding: 20px;
 }
 
 @media (max-width: 768px) {
