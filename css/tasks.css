@@ -34,7 +34,7 @@
     height: 30px;
     border: none;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, transform 0.2s;
     color: white;
     font-weight: bold;
     font-size: 16px;
@@ -46,6 +46,7 @@
 
 .tasks__button--done:hover {
     background-color: #218838;
+    transform: scale(1.1);
 }
 
 .tasks__button--done:active {
@@ -58,6 +59,7 @@
 
 .tasks__button--remove:hover {
     background-color: #c82333;
+    transform: scale(1.1);
 }
 
 .tasks__button--remove:active {

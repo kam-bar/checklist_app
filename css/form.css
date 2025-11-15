@@ -24,15 +24,17 @@
     font-weight: bold;
     cursor: pointer;
     font-family: inherit;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, transform 0.3s;
 }
 
 .form__button:hover {
     background-color: #138496;
+    transform: scale(1.05);
 }
 
 .form__button:active {
     background-color: #117a8b;
+    transform: scale(0.95);
 }
 
 @media (max-width: 768px) {
