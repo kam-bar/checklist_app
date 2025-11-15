@@ -6,6 +6,9 @@
 .section__header {
     border-bottom: 2px solid #e8e8e8;
     padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .section__title {
@@ -18,9 +21,29 @@
     padding: 20px;
 }
 
+.section__buttons {
+    display: flex;
+    gap: 10px;
+}
+
 @media (max-width: 768px) {
     .section__header {
-        padding: 15px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .section__buttons {
+        width: 100%;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 768px) {
+    .section__header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
     }
 
     .section__title {
@@ -29,5 +52,14 @@
 
     .section__body {
         padding: 15px;
+    }
+
+    .section__buttons {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .section__button {
+        width: 100%;
     }
 }
